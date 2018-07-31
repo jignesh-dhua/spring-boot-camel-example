@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: Spring Boot Camel Example
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:  
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: false
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+com:
+  oup:
+    mykey: myvalue-dev
+       
+---
+spring:
+  profiles: uat
+com:
+  oup:
+    mykey: myvalue-uat
+---        
+spring:
+  profiles: prod
+com:
+  oup:
+    mykey: myvalue-uat

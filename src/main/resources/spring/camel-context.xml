@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring       http://camel.apache.org/schema/spring/camel-spring.xsd">
-    <!-- You could also define a traditional camel context here -->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    					http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+    
     <camelContext id="camelContext-89737358-56c1-4199-b600-05509b5b3b2d" xmlns="http://camel.apache.org/schema/spring">
         <route id="_route1">
             <from id="_from1" uri="timer://foo?period=1000"/>
