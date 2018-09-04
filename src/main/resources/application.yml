@@ -3,4 +3,4 @@ camel:
     # The Camel context name
     name: CamelRestJpa
 server:
-  port: 9090
+  port: 8080
