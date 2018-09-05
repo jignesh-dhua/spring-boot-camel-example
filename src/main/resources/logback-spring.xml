@@ -37,9 +37,12 @@
 	<!-- Ned appender to write to file -->
 
 	<!-- Setting the root level of logging to INFO -->
-	<root level="ERROR">
+	
+	<root level="info">
 		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE-AUDIT" />
 	</root>
+	
 	<logger name="org.springframework" level="INFO">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="FILE-AUDIT" />
@@ -55,8 +58,6 @@
 	</logger>
 
 
-	<root level="info">
-		<appender-ref ref="STDOUT" />
-	</root>
+	
 
 </configuration>
